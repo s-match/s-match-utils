@@ -19,6 +19,11 @@ import it.unitn.disi.smatch.CLI;
 
 
 /**
+ * 
+ * <p>
+ * <b>Note</b>: working dir during testing is {@code src/main/resources/bin}
+ * </p>
+ * 
  * @since 2.0.0
  * @author <a rel="author" href="http://davidleoni.it/">David Leoni</a>
  */
@@ -39,8 +44,8 @@ public class CliTest {
         
         CLI.main(new String[]{
                 CLI.CMD_ALL_STEPS,
-                "src/main/resources/test-data/cw/c.xml",
-                "src/main/resources/test-data/cw/w.xml",
+                "../test-data/cw/c.xml",
+                "../test-data/cw/w.xml",
                 output.getAbsolutePath()
                 });
         log.debug("Output mapping is " + output.getAbsolutePath());
